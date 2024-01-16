@@ -1,0 +1,186 @@
+/* top-3*/
+
+.top-3-WHITE{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0rem 5%  ;
+    }
+    .top-3-WHITE h2{
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    }
+    .top-3-WHITE p{
+    text-align: center;
+    margin: 3% 10% 0 10%;
+    line-height: 3rem;
+    font-size: 2rem;
+    }
+    .top-3-WHITE p:nth-child(4){
+    padding-bottom: 15%;
+    }
+    
+    .top-3{
+    display: block;
+    color: var(--white-color);
+    height: 100%;
+    }
+    .titulo{
+        margin: 3rem;
+    }
+    .titulo h2{
+        margin: 1rem;
+    }
+    .titulo p{
+        font-weight: 400;
+        font-size: 1.5rem ;
+        font-style: italic;
+        letter-spacing: 0.3rem;
+        text-align: end;
+    }
+    
+    .list-top{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 15rem 10rem 0 10rem;
+        padding: 0.5rem;
+        text-align: left;
+        counter-reset: grid-counter;
+    }
+    .list-top article {
+        font-size: 3rem;
+        margin: 2rem 0rem 0rem 4rem;
+    }
+    .list-top article h4{
+        font-size: 3rem;
+        padding-left: 5rem;
+        margin-bottom: 3rem;
+        position: relative;
+        }
+    
+    .list-top h4::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position:absolute;
+    top: -3.5rem;
+    left: -1.5rem;
+    font-size: 8rem ;
+    font-style: italic;
+    transform: rotate(10deg);
+        
+    }
+    .list-top p{
+        display: flex;
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+
+
+@media (min-width: 768px) and (max-width:924px) {
+
+.top-3-WHITE p{
+    margin: 5% 0;
+    width: 90%;
+    line-height: auto;
+    font-size: 2rem;
+    }
+    .list-top{
+        display: block;
+        grid-template-rows: repeat(3, 1fr);
+        margin: 15rem 10rem 0 10rem;
+        padding: 0.5rem;
+        text-align: left;
+        counter-reset: grid-counter;
+    }
+
+    .list-top article{
+        margin-bottom: 15%;
+    }
+    .list-top p{
+        display: block;
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 767px){
+    .top-3-WHITE p{
+        margin: 5% 0;
+        width: 90%;
+        line-height: auto;
+        font-size: 2rem;
+        }
+        .list-top{
+            display: block;
+            grid-template-rows: repeat(3, 1fr);
+            margin: 15rem 10rem 0 10rem;
+            padding: 0.5rem;
+            text-align: left;
+            counter-reset: grid-counter;
+        }
+    
+        .list-top article{
+            margin: 0;
+            margin-bottom: 15%;
+        }
+        .list-top p{
+            display: block;
+            font-size: 2rem;
+            text-align: justify;
+        }
+    
+}
+
+@media (max-width: 499px){
+    .top-3-WHITE h2{
+        font-size: 4rem;
+        }
+    .top-3-WHITE p{
+        margin: 5% 0;
+        width: 90%;
+        line-height: auto;
+        font-size: 1.6rem;
+        letter-spacing: normal;
+        text-align: justify;
+        }
+        .list-top{
+            display: block;
+            grid-template-rows: repeat(3, 1fr);
+            margin: 0 auto;
+            padding: 0.5rem;
+            width: 80%;
+            text-align: left;
+            counter-reset: grid-counter;
+        }
+    
+        .list-top article{
+            margin-bottom: 15%;
+        }
+        .titulo h2{
+        text-align: center;
+        padding-bottom: 1rem;
+        
+        }
+        .list-top p{
+            display: block;
+            font-size: 2rem;
+            text-align: justify;
+        }
+        .list-top h4::before{
+            counter-increment: grid-counter;
+            content: counter(grid-counter);
+            position:absolute;
+            top: -1.3rem;
+            left: -0.5rem;
+            font-size: 5rem ;
+            font-style: italic;
+            transform: rotate(10deg);
+                
+            }
+}

@@ -1,0 +1,25 @@
+.main-bg {
+    background-image: url('../img/main-bg.svg');
+    background-position: center center;
+    background-size: cover;
+    padding: var(--gap);
+    }
+.white-bg{
+background-image: url('../img/main-bg-white.svg');
+color: var(--prim-color);
+
+}
+.main-content{
+background-color: var(--white-color);
+color: var(--prim-color);
+padding: var(--gap);
+}
+
+.section{
+min-height: 100vh;
+}
+
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
